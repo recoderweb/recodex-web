@@ -222,7 +222,7 @@
             <img class="footer-shape shape-1b" src="{{ asset('img/shape/star-3b.svg') }}" alt="shape">
             <img class="footer-shape shape-2b d-none d-lg-inline-block" src="{{ asset('img/shape/star-4b.svg') }}"
                 alt="shape">
-            <img class="footer-shape shape-3b" src="{{ asset('img/shape/star-6b.svg') }}" alt="shape">
+            <img class="footer-shape shape-3b" src="{{ asset('img/shape/star-6.svg') }}" alt="shape">
             <img class="footer-shape shape-4b d-none d-lg-inline-block" src="{{ asset('img/shape/star-5b.svg') }}"
                 alt="shape">
             <img class="footer-shape shape-5b" src="{{ asset('img/shape/star-5b.svg') }}" alt="shape">
