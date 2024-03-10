@@ -1,13 +1,15 @@
 <meta charset="utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
-<meta name="keywords" content="online solution, it, tech, sass, technology, teaching, learning">
+<meta name="keywords"
+    content="website development, hosting solutions, domain registration, e-commerce website, UI/UX design, programming">
 <meta name="description"
-    content="Techy is a it solutions HTML template for all kinds of it, technology, online tech website">
-<title>Recodex - Create Website</title>
-<meta property="og:site_name" content="Techy">
+    content="Recodex offers comprehensive IT solutions for website development, hosting, domain registration, e-commerce websites, UI/UX design, and programming services.">
+<title>Recodex - Your Digital Innovation Partner</title>
+<meta property="og:site_name" content="Recodex">
 <meta property="og:url" content="">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Techy – IT Solution & Web Security HTML5 Template">
+<meta property="og:title" content="Recodex - Your Digital Innovation Partner">
+
 <meta name='og:image' content='img/ogg.png'>
 <!-- For IE -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

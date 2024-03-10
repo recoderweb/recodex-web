@@ -90,19 +90,19 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav list-none ps-0 mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#home">Home</a>
+                                            <a class="nav-link" href="#home">{{ __('home.navbar.home') }}</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#about">About Us</a>
+                                            <a class="nav-link" href="#about">{{ __('home.navbar.about') }}</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#services">Services</a>
+                                            <a class="nav-link" href="#services">{{ __('home.navbar.services') }}</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#team">Team</a>
+                                            <a class="nav-link" href="#team">{{ __('home.navbar.team') }}</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#contact">Contact</a>
+                                            <a class="nav-link" href="#contact">{{ __('home.navbar.contact') }}</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -115,15 +115,18 @@
                                         <div class="dropdown">
                                             <a class="language-btn dropdown-toggle" href="#" role="button"
                                                 id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                English
+                                                {{ __('home.navbar.language') }}
                                                 <i class="fal fa-chevron-down"></i>
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Indonesian</a>
+                                                    <a class="dropdown-item" href="locale/en">English</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Spanish</a>
+                                                    <a class="dropdown-item" href="locale/id">Indonesian</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="locale/es">Spanish</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -154,15 +157,13 @@
                 </div>
                 <div class="offset-widget mb-40">
                     <div class="info-widget">
-                        <h4 class="offset-title mb-20">About Us</h4>
-                        <p class="mb-30">At Recodex, we believe in the power of digital transformation to elevate
-                            businesses to new heights. As a leading provider of website development services, we
-                            specialize in crafting bespoke digital solutions tailored to your unique needs.</p>
+                        <h4 class="offset-title mb-20">{{ __('home.title.about') }}</h4>
+                        <p class="mb-30">{{ __('home.desc.about') }}</p>
                     </div>
                 </div>
                 <div class="offset-widget mb-30 pr-10">
                     <div class="info-widget info-widget2">
-                        <h4 class="offset-title mb-20">Contact Info</h4>
+                        <h4 class="offset-title mb-20">{{ __('home.title.contact') }}</h4>
                         <p>
                             <i class="fal fa-address-book"></i>
                             Jl. Komodor Halim Perdana Kusuma No.10
@@ -188,19 +189,19 @@
             <nav class="side-mobile-menu">
                 <ul id="mobile-menu-active">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#">{{ __('home.navbar.home') }}</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="#">{{ __('home.navbar.about') }}</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#">{{ __('home.navbar.services') }}</a>
                     </li>
                     <li>
-                        <a href="#">Team</a>
+                        <a href="#">{{ __('home.navbar.team') }}</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">{{ __('home.navbar.contact') }}</a>
                     </li>
                 </ul>
             </nav>
@@ -230,26 +231,29 @@
                 <div class="row gx-4 gx-xxl-5 mb-10">
                     <div class="col-xl-2 col-md-6" data-aos="fade-up">
                         <div class="footer__widget mb-40">
-                            <h4 class="widget-title mb-35">Quick Links</h4>
+                            <h4 class="widget-title mb-35">{{ __('home.title.quick_link') }}</h4>
                             <ul class="fot-list">
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.html">{{ __('home.navbar.home') }}</a>
                                 </li>
                                 <li>
-                                    <a href="services.html">About Us</a>
+                                    <a href="services.html">{{ __('home.navbar.about') }}</a>
                                 </li>
                                 <li>
-                                    <a href="price.html">Services</a>
+                                    <a href="services.html">{{ __('home.navbar.services') }}</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="price.html">{{ __('home.navbar.team') }}</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">{{ __('home.navbar.contact') }}</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="footer__widget mb-40 ps-xxl-4">
-                            <h4 class="widget-title mb-35">Contact</h4>
+                            <h4 class="widget-title mb-35">{{ __('home.title.contact') }}</h4>
                             <ul class="fot-list">
                                 <li>
                                     <a href="#">admin@recodex.id</a>
@@ -265,8 +269,8 @@
                     </div>
                     <div class="col-xl-4 col-md-6 ps-xxl-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="footer__widget mb-40 px-xxl-5">
-                            <h4 class="widget-title mb-35">Subscribe</h4>
-                            <p class="fs-17 mb-0 pb-20">Let's work together to recode the future of your brand.</p>
+                            <h4 class="widget-title mb-35">{{ __('home.title.subscribe') }}</h4>
+                            <p class="fs-17 mb-0 pb-20">{{ __('home.desc.subscribe') }}</p>
                             <form class="sub-form" action="#">
                                 <input type="text" placeholder="Email">
                                 <button type="submit"><i class="bi bi-arrow-right"></i></button>
@@ -300,16 +304,9 @@
             <div class="container">
                 <div class="row gx-4 gx-xxl-5 copyright-two align-items-center">
                     <div class="col-xl-5 col-md-5">
-                        <ul
-                            class="fot-list d-flex align-items-center  justify-content-center justify-content-md-start">
+                        <ul class="fot-list d-flex align-items-center justify-content-center justify-content-md-start">
                             <li>
-                                <a href="about.html">About Us</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                            <li>
-                                <a href="blog-grid.html">Blog</a>
+                                <a href="#">Recodex.id</a>
                             </li>
                         </ul>
                     </div>
@@ -323,7 +320,7 @@
                     <div class="col-xl-4 col-md-5 text-center text-md-end">
                         <p class="text-white mb-20 pe-xl-3">
                             <a href="https://recodex.id/">Recodex</a>
-                            © 2024, All Rights Reserved
+                            © 2024, {{ __('home.title.allright_reserved') }}
                         </p>
                     </div>
                 </div>
