@@ -18,5 +18,9 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
 // Localization Route
 Route::get('locale/{lang}', [LocalizationController::class,'setLanguage']);
