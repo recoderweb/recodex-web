@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\LocalizationController;
 
 /*
@@ -14,13 +17,11 @@ use App\Http\Controllers\LocalizationController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+
+Route::get('/service', [ServiceController::class, 'index'])->name('service');
 
 // Localization Route
 Route::get('locale/{lang}', [LocalizationController::class,'setLanguage']);

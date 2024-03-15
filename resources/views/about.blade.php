@@ -23,7 +23,7 @@
                         <h2 class="page-title mb-20">{{ __('home.title.about') }}</h2>
                         <nav aria-label="breadcrumb">
                             <ul class="breadcrumb list-none justify-content-center justify-content-md-start">
-                                <li><a href="#">{{ __('home.navbar.home') }}</a></li>
+                                <li><a href="{{ route('home') }}">{{ __('home.navbar.home') }}</a></li>
                                 <li class="active" aria-current="page">{{ __('home.navbar.about') }}</li>
                             </ul>
                         </nav>
@@ -33,6 +33,7 @@
         </div>
     </div>
     <!--page-title-area end-->
+
     <!--techy-feature start-->
     <section class="techy-feature pt-150 pt-lg-100 pb-30 pb-lg-15">
         <div class="container">
@@ -68,6 +69,7 @@
         </div>
     </section>
     <!--techy-feature end-->
+
     <!--about-techy start-->
     <section class="about-techy about-techy-4d pt-140 pb-75 pt-lg-60 pb-lg-15">
         <img class="about-shape-4d shape-1b d-none d-xl-inline-block" src="{{ asset('img/shape/star-3b.svg') }}"
@@ -96,25 +98,28 @@
                         <p>{{ __('home.desc.about') }}</p>
                         <ul class="block-box box-two list-none">
                             <li>
-                                <a href="contact.html">
-                                    <span class="img-bg"><img src="img/icon/icon-1a.svg" alt="icon"></span>
-                                    <span>Money Back Guarantee</span>
+                                <a href="#">
+                                    <span class="img-bg"><img src="{{ asset('img/icon/icon-1a.svg') }}"
+                                            alt="icon"></span>
+                                    <span>{{ __('home.title.fast_process') }}</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
-                                    <span class="img-bg"><img src="img/icon/icon-2a.svg" alt="icon"></span>
-                                    <span>24/7 Online Support</span>
+                                <a href="#">
+                                    <span class="img-bg"><img src="{{ asset('img/icon/icon-2a.svg') }}"
+                                            alt="icon"></span>
+                                    <span>{{ __('home.title.online_support') }}</span>
                                 </a>
                             </li>
                         </ul>
-                        <a class="theme_btn mt-60" href="about.html">{{ __('home.btn.details') }}</a>
+                        <a class="theme_btn mt-60" href="price">{{ __('home.btn.details') }}</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--about-techy end-->
+
     <!--counter-area end-->
     <section class="counter-area pt-70 pb-100 pt-lg-25 pb-lg-15">
         <div class="container">
@@ -147,20 +152,21 @@
         </div>
     </section>
     <!--counter-area start-->
+
     <!--techy-team start-->
     <section class="gradient-bg techy-team team-sec-two mt-0 pt-95  pb-90 pt-lg-55 pb-lg-60">
-        <img class="team-shape shape-1b" src="img/shape/star-3b.svg" alt="shape">
-        <img class="team-shape shape-2b" src="img/shape/star-4b.svg" alt="shape">
-        <img class="team-shape shape-3b" src="img/shape/star-6b.svg" alt="shape">
-        <img class="team-shape shape-4b" src="img/shape/star-5b.svg" alt="shape">
-        <img class="team-shape shape-5b" src="img/shape/star-5b.svg" alt="shape">
-        <img class="team-shape shape-6b" src="img/shape/line-round-6b.svg" alt="shape">
+        <img class="team-shape shape-1b" src="{{ asset('img/shape/star-3b.svg') }}" alt="shape">
+        <img class="team-shape shape-2b" src="{{ asset('img/shape/star-4b.svg') }}" alt="shape">
+        <img class="team-shape shape-3b" src="{{ asset('img/shape/star-6b.svg') }}" alt="shape">
+        <img class="team-shape shape-4b" src="{{ asset('img/shape/star-5b.svg') }}" alt="shape">
+        <img class="team-shape shape-5b" src="{{ asset('img/shape/star-5b.svg') }}" alt="shape">
+        <img class="team-shape shape-6b" src="{{ asset('img/shape/line-round-6b.svg') }}" alt="shape">
         <div class="container">
             <div class="row gx-4 gx-xxl-5">
                 <div class="col-lg-12">
                     <div class="section-title-two text-center mb-55">
-                        <h6 class="sub-title mb-20">Our Team</h6>
-                        <h2 class="sect-title">Expert Team Member</h2>
+                        <h6 class="sub-title mb-20">{{ __('home.title.team') }}</h6>
+                        <h2 class="sect-title">{{ __('home.title.team_expert') }}</h2>
                     </div>
                 </div>
             </div>
@@ -168,7 +174,7 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="team-style-two text-center mb-45">
                         <div class="team-thumb">
-                            <a href="team-details.html"><img src="img/team/team-4d.jpg" alt="img"></a>
+                            <a href="#"><img src="{{ asset('img/team/team-zachran.jpg') }}" alt="img"></a>
                             <div class="team-social-two">
                                 <a href="#">
                                     <i class="fab fa-facebook-f"></i>
@@ -185,15 +191,15 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <p>Chief Excutive</p>
-                            <h3 class="sect-title-two"><a href="team-details.html">Savannah Nguyen</a></h3>
+                            <p>{{ __('home.position.ceo') }}</p>
+                            <h3 class="sect-title-two"><a href="#">Zachran Razendra</a></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="team-style-two text-center mb-45">
                         <div class="team-thumb">
-                            <a href="team-details.html"><img src="img/team/team-5d.jpg" alt="img"></a>
+                            <a href="#"><img src="{{ asset('img/team/team-taufiq.jpg') }}" alt="img"></a>
                             <div class="team-social-two">
                                 <a href="#">
                                     <i class="fab fa-facebook-f"></i>
@@ -210,15 +216,15 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <p>Chief Excutive</p>
-                            <h3 class="sect-title-two"><a href="team-details.html">Jane Cooper</a></h3>
+                            <p>{{ __('home.position.cto') }}</p>
+                            <h3 class="sect-title-two"><a href="#">M. Taufiq Shidiq</a></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="team-style-two text-center mb-45">
                         <div class="team-thumb">
-                            <a href="team-details.html"><img src="img/team/team-6d.jpg" alt="img"></a>
+                            <a href="#"><img src="{{ asset('img/team/team-nabila.jpg') }}" alt="img"></a>
                             <div class="team-social-two">
                                 <a href="#">
                                     <i class="fab fa-facebook-f"></i>
@@ -235,43 +241,29 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <p>Chief Excutive</p>
-                            <h3 class="sect-title-two"><a href="team-details.html">Esther Howard</a></h3>
+                            <p>{{ __('home.position.public_relations') }}</p>
+                            <h3 class="sect-title-two"><a href="#">Nabila Mufida</a></h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row gx-4 gx-xxl-5">
                 <div class="col-lg-12 text-center pt-15" data-aos="fade-up" data-aos-delay="200">
-                    <a class="theme_btn" href="team.html">See All Member</a>
+                    <a class="theme_btn" href="team.html">{{ __('home.btn.member') }}</a>
                 </div>
             </div>
         </div>
     </section>
     <!--techy-team end-->
-    <!--techy-video start-->
-    <section class="techy-video pt-230 pb-230 pt-lg-150 pb-lg-150">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="video-wrapper-two text-center">
-                        <a class="popup-video mb-30" href="https://www.youtube.com/watch?v=lTxn2BuqyzU"><i
-                                class="bi bi-play-fill"></i></a>
-                        <h4>Watch Videos</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--techy-video end-->
+
     <!--teachy-price start-->
-    <section class="techy-price price-bg pt-150 pb-50 pt-lg-60">
+    <section id="price" class="techy-price price-bg pt-150 pb-50 pt-lg-60">
         <div class="container">
             <div class="row gx-4 gx-xxl-5">
                 <div class="col-lg-12">
                     <div class="section-title-two text-center mb-30 pb-1">
-                        <h6 class="sub-title mb-20">Pricing List</h6>
-                        <h2 class="sect-title">Our Simple & Easy Pricing</h2>
+                        <h6 class="sub-title mb-20">{{ __('home.title.price') }}</h6>
+                        <h2 class="sect-title">{{ __('home.title.best_price') }}</h2>
                     </div>
                 </div>
             </div>
@@ -280,12 +272,9 @@
                     <ul class="nav nav-tabs price-tab" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                type="button" role="tab" aria-controls="home" aria-selected="true">Monthly</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile"
-                                aria-selected="false">Yearly</button>
+                                type="button" role="tab" aria-controls="home"
+                                aria-selected="true">{{ __('home.title.webdev') }}
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -296,136 +285,68 @@
                         <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="100">
                             <div class="plan mb-45">
                                 <div class="plan__header">
-                                    <h3>Starter</h3>
-                                    <p>For most businesses that want to the otpimize web queries</p>
+                                    <h3>{{ __('home.title.starter') }}</h3>
+                                    <p>{{ __('home.desc.starter') }}</p>
                                 </div>
                                 <div class="plan__price">
-                                    $500
-                                    <sub>/month</sub>
+                                    IDR 2,500,000
                                 </div>
                                 <ul class="plan__body list-none">
-                                    <li>All limited links</li>
-                                    <li>Own analytics platform</li>
-                                    <li>Chat support</li>
-                                    <li>Optimize hashtags</li>
-                                    <li>Unlimited users</li>
+                                    <li>5 pages</li>
+                                    <li>Responsive Design</li>
+                                    <li>Social Media Integration</li>
+                                    <li>Basic SEO Optimization</li>
+                                    <li>1 Month Free Hosting</li>
                                 </ul>
                                 <div class="plan__footer">
-                                    <a class="price-btn" href="#">Choose Plan</a>
+                                    <a class="price-btn" href="#">{{ __('home.btn.package') }}</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="200">
                             <div class="plan mb-45">
                                 <div class="plan__header">
-                                    <h3>Medium</h3>
-                                    <p>For most businesses that want to the otpimize web queries</p>
+                                    <h3>{{ __('home.title.medium') }}</h3>
+                                    <p>{{ __('home.desc.medium') }}</p>
                                 </div>
                                 <div class="plan__price">
-                                    $100
-                                    <sub>/month</sub>
+                                    IDR 5,000,000
                                 </div>
                                 <ul class="plan__body list-none">
-                                    <li>All limited links</li>
-                                    <li>Own analytics platform</li>
-                                    <li>Chat support</li>
-                                    <li>Optimize hashtags</li>
-                                    <li>Unlimited users</li>
+                                    <li>10 pages</li>
+                                    <li>Responsive design</li>
+                                    <li>Social Media Integration</li>
+                                    <li>Contact Form</li>
+                                    <li>Photo or Video Gallery</li>
+                                    <li>Advanced SEO Optimization</li>
+                                    <li>2 months Free Hosting</li>
                                 </ul>
                                 <div class="plan__footer">
-                                    <a class="price-btn" href="#">Choose Plan</a>
+                                    <a class="price-btn" href="#">{{ __('home.btn.package') }}</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="300">
                             <div class="plan mb-45">
                                 <div class="plan__header">
-                                    <h3>Advance</h3>
-                                    <p>For most businesses that want to the otpimize web queries</p>
+                                    <h3>{{ __('home.title.advance') }}</h3>
+                                    <p>{{ __('home.desc.advance') }}</p>
                                 </div>
                                 <div class="plan__price">
-                                    $800
-                                    <sub>/month</sub>
+                                    IDR 7,500,000
                                 </div>
                                 <ul class="plan__body list-none">
-                                    <li>All limited links</li>
-                                    <li>Own analytics platform</li>
-                                    <li>Chat support</li>
-                                    <li>Optimize hashtags</li>
-                                    <li>Unlimited users</li>
+                                    <li>15 pages</li>
+                                    <li>Responsive DEsign</li>
+                                    <li>Social Media Integration</li>
+                                    <li>Contact Form</li>
+                                    <li>Photo or Video Gallery</li>
+                                    <li>Blog or News Section</li>
+                                    <li>Full SEO Optimization</li>
+                                    <li>3 Months Free Hosting</li>
                                 </ul>
                                 <div class="plan__footer">
-                                    <a class="price-btn" href="#">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <div class="row gx-4 gx-xxl-5">
-                        <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="100">
-                            <div class="plan mb-45">
-                                <div class="plan__header">
-                                    <h3>Starter</h3>
-                                    <p>For most businesses that want to the otpimize web queries</p>
-                                </div>
-                                <div class="plan__price">
-                                    $500
-                                    <sub>/month</sub>
-                                </div>
-                                <ul class="plan__body list-none">
-                                    <li>All limited links</li>
-                                    <li>Own analytics platform</li>
-                                    <li>Chat support</li>
-                                    <li>Optimize hashtags</li>
-                                    <li>Unlimited users</li>
-                                </ul>
-                                <div class="plan__footer">
-                                    <a class="price-btn" href="#">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="200">
-                            <div class="plan mb-45">
-                                <div class="plan__header">
-                                    <h3>Medium</h3>
-                                    <p>For most businesses that want to the otpimize web queries</p>
-                                </div>
-                                <div class="plan__price">
-                                    $100
-                                    <sub>/month</sub>
-                                </div>
-                                <ul class="plan__body list-none">
-                                    <li>All limited links</li>
-                                    <li>Own analytics platform</li>
-                                    <li>Chat support</li>
-                                    <li>Optimize hashtags</li>
-                                    <li>Unlimited users</li>
-                                </ul>
-                                <div class="plan__footer">
-                                    <a class="price-btn" href="#">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="300">
-                            <div class="plan mb-45">
-                                <div class="plan__header">
-                                    <h3>Advance</h3>
-                                    <p>For most businesses that want to the otpimize web queries</p>
-                                </div>
-                                <div class="plan__price">
-                                    $800
-                                    <sub>/month</sub>
-                                </div>
-                                <ul class="plan__body list-none">
-                                    <li>All limited links</li>
-                                    <li>Own analytics platform</li>
-                                    <li>Chat support</li>
-                                    <li>Optimize hashtags</li>
-                                    <li>Unlimited users</li>
-                                </ul>
-                                <div class="plan__footer">
-                                    <a class="price-btn" href="#">Choose Plan</a>
+                                    <a class="price-btn" href="#">{{ __('home.btn.package') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -435,15 +356,16 @@
         </div>
     </section>
     <!--teachy-price end-->
+
     <!--techy-newsletter start-->
     <section class="techy-newsletter pt-120 pb-95 pt-md-20">
         <div class="container">
             <div class="row gx-4 gx-xxl-5 align-items-center justify-content-center">
                 <div class="col-lg-8">
                     <div class="block-style-two text-center">
-                        <img class="news-shape-one" src="img/shape/line-round-3a.svg" alt="shape">
-                        <h3>Have a project in mind? Let’s get to work.</h3>
-                        <a href="contact.html" class="theme_btn">Contact us</a>
+                        <img class="news-shape-one" src="{{ asset('img/shape/line-round-3a.svg') }}" alt="shape">
+                        <h3>{{ __('home.title.website') }}</h3>
+                        <a href="#" class="theme_btn">{{ __('home.btn.contact') }}</a>
                     </div>
                 </div>
             </div>

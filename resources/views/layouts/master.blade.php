@@ -85,7 +85,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-6 text-start">
                             <div class="logo-area">
-                                <a href="index.html"><img src="{{ asset('img/logo/header-logo-1.png') }}"
+                                <a href="{{ route('home') }}"><img src="{{ asset('img/logo/header-logo-1.png') }}"
                                         alt="Header-logo"></a>
                             </div>
                         </div>
@@ -129,10 +129,12 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav list-none ps-0 mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#home">{{ __('home.navbar.home') }}</a>
+                                            <a class="nav-link"
+                                                href="{{ route('home') }}">{{ __('home.navbar.home') }}</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#about">{{ __('home.navbar.about') }}</a>
+                                            <a class="nav-link"
+                                                href="{{ route('about') }}">{{ __('home.navbar.about') }}</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#services">{{ __('home.navbar.services') }}</a>
@@ -190,7 +192,7 @@
             <!-- offset-sidebar start -->
             <div class="offset-sidebar">
                 <div class="offset-widget offset-logo mb-30">
-                    <a href="#">
+                    <a href="{{ route('home') }}">
                         <img src="{{ asset('img/logo/header-logo-1.png') }}" alt="logo">
                     </a>
                 </div>
@@ -205,7 +207,7 @@
                         <h4 class="offset-title mb-20">{{ __('home.title.contact') }}</h4>
                         <p>
                             <i class="fal fa-address-book"></i>
-                            Jl. Komodor Halim Perdana Kusuma No.10
+                            Gg. Nangka No.10, RT.3/RW.7, Halim Perdana Kusumah
                         </p>
                         <p>
                             <i class="fal fa-phone"></i>
@@ -228,19 +230,19 @@
             <nav class="side-mobile-menu">
                 <ul id="mobile-menu-active">
                     <li>
-                        <a href="#">{{ __('home.navbar.home') }}</a>
+                        <a href="{{ route('home') }}">{{ __('home.navbar.home') }}</a>
                     </li>
                     <li>
-                        <a href="#">{{ __('home.navbar.about') }}</a>
+                        <a href="{{ route('home') }}">{{ __('home.navbar.about') }}</a>
                     </li>
                     <li>
-                        <a href="#">{{ __('home.navbar.services') }}</a>
+                        <a href="#services">{{ __('home.navbar.services') }}</a>
                     </li>
                     <li>
-                        <a href="#">{{ __('home.navbar.team') }}</a>
+                        <a href="#team">{{ __('home.navbar.team') }}</a>
                     </li>
                     <li>
-                        <a href="#">{{ __('home.navbar.contact') }}</a>
+                        <a href="#contact">{{ __('home.navbar.contact') }}</a>
                     </li>
                 </ul>
             </nav>
@@ -257,7 +259,7 @@
 
         <!--footer-area start-->
 
-        <footer id="#contact" class="gradient-bg footer-area theme-footer-two pt-95 pb-80 pb-lg-10">
+        <footer id="contact" class="gradient-bg footer-area theme-footer-two pt-95 pb-80 pb-lg-10">
             <img class="footer-shape shape-1b" src="{{ asset('img/shape/star-3b.svg') }}" alt="shape">
             <img class="footer-shape shape-2b d-none d-lg-inline-block" src="{{ asset('img/shape/star-4b.svg') }}"
                 alt="shape">
@@ -273,19 +275,19 @@
                             <h4 class="widget-title mb-35">{{ __('home.title.quick_link') }}</h4>
                             <ul class="fot-list">
                                 <li>
-                                    <a href="index.html">{{ __('home.navbar.home') }}</a>
+                                    <a href="{{ route('home') }}">{{ __('home.navbar.home') }}</a>
                                 </li>
                                 <li>
-                                    <a href="services.html">{{ __('home.navbar.about') }}</a>
+                                    <a href="{{ route('about') }}">{{ __('home.navbar.about') }}</a>
                                 </li>
                                 <li>
-                                    <a href="services.html">{{ __('home.navbar.services') }}</a>
+                                    <a href="#services">{{ __('home.navbar.services') }}</a>
                                 </li>
                                 <li>
-                                    <a href="price.html">{{ __('home.navbar.team') }}</a>
+                                    <a href="#team">{{ __('home.navbar.team') }}</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">{{ __('home.navbar.contact') }}</a>
+                                    <a href="#contact">{{ __('home.navbar.contact') }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -301,7 +303,7 @@
                                     <a href="#">(+62) 822 9814 1940</a>
                                 </li>
                                 <li>
-                                    <a href="#">Jl. Komodor Halim Perdana Kusuma No.10</a>
+                                    <a href="#">Gg. Nangka No.10, RT.3/RW.7, Halim Perdana Kusumah</a>
                                 </li>
                             </ul>
                         </div>
@@ -318,8 +320,8 @@
                                 <a href="#">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
+                                <a href="https://www.instagram.com/recodex.id/">
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                                 <a href="#">
                                     <i class="fab fa-linkedin-in"></i>
@@ -351,7 +353,7 @@
                     </div>
                     <div class="col-xl-3 col-md-2 text-center">
                         <div class="footer__logo mb-25">
-                            <a href="index.html">
+                            <a href="{{ route('home') }}">
                                 <img src="{{ asset('img/logo/header-logo-1.png') }}" alt="">
                             </a>
                         </div>
